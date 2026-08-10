@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Andhra Pradesh Tourism</title>
+
+    /*<style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Poppins,sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#fffaf5;
+            color:#333;
+        }
+
+        nav{
+            width:100%;
+            padding:15px 40px;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            background:rgba(255,255,255,0.8);
+
+            backdrop-filter:blur(6px);
+
+            position:fixed;
+            top:0;
+            z-index:1000;
+        }
+
+        nav h1{
+            color:#ff6b6b;
+        }
+
+        nav ul{
+            display:flex;
+            gap:30px;
+            list-style:none;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:#444;
+            font-size:18px;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#ff6b6b;
+        }
+
+        .hero{
+            width:100%;
+            height:100vh;
+
+            background:
+            linear-gradient(
+                rgba(0,0,0,0.4),
+                rgba(0,0,0,0.5)
+            ),
+
+            url('https://upload.wikimedia.org/wikipedia/commons/4/4f/AP_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original');
+
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            text-align:center;
+            color:white;
+
+            padding:20px;
+        }
+
+        .hero-content h2{
+            font-size:70px;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:24px;
+            line-height:40px;
+        }
+
+        .btn{
+            margin-top:30px;
+            padding:15px 35px;
+            border:none;
+            background:#ffd166;
+            border-radius:40px;
+            font-size:18px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            transform:scale(1.05);
+            background:#fff;
+        }
+
+        .about{
+            padding:90px 50px;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:50px;
+            flex-wrap:wrap;
+
+            background:#fff0f3;
+        }
+
+        .about img{
+            width:40%;
+            border-radius:20px;
+        }
+
+        .about-text{
+            width:50%;
+        }
+
+        .about-text h2{
+            font-size:42px;
+            color:#ff6b6b;
+            margin-bottom:25px;
+        }
+
+        .about-text p{
+            font-size:20px;
+            line-height:35px;
+            text-align:justify;
+        }
+
+        .districts{
+            padding:80px 40px;
+            text-align:center;
+            background:#f1f7ff;
+        }
+
+        .districts h2{
+            font-size:42px;
+            color:#4d96ff;
+            margin-bottom:50px;
+        }
+
+        .card-container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+        }
+
+        .card{
+            width:300px;
+            background:white;
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+            transition:0.4s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+        }
+
+        .card img{
+            width:100%;
+            height: 500px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0;
+            color:#ff6b6b;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+            line-height:28px;
+        }
+
+        .card a{
+            text-decoration:none;
+            color:black;
+        }
+
+        .contact{
+            background:#dff6ff;
+            padding:70px 50px;
+
+            display:flex;
+            justify-content:space-evenly;
+            flex-wrap:wrap;
+            gap:30px;
+        }
+
+        .contact-box{
+            width:30%;
+        }
+
+        .contact-box h2{
+            color:#4d96ff;
+            margin-bottom:20px;
+        }
+
+        .contact-box p{
+            line-height:34px;
+            font-size:18px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero-content h2{
+                font-size:42px;
+            }
+
+            .about img,
+            .about-text,
+            .contact-box{
+                width:100%;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <h1>Explore AP</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#tourism">Tourism</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Welcome To Andhra Pradesh</h2>
+
+            <p>
+                Land of Temples, Rivers, Beaches,
+                Food and Rich Telugu Culture.
+            </p>
+
+            <button class="btn">Explore Andhra</button>
+
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <img src="https://media.istockphoto.com/id/1285898933/photo/tall-buddha-statue-in-andhra-pradesh-state-amaravathi-india.jpg?s=612x612&w=0&k=20&c=3R939IZv0lNRZSTOCXB4KLvrFJgzJG08bjdC2M-gBy8=">
+
+        <div class="about-text">
+
+            <h2>About Andhra Pradesh</h2>
+
+            <p>
+                Andhra Pradesh is one of the most beautiful states in India.
+                From the beaches of Visakhapatnam to the fertile Godavari lands,
+                the state is filled with culture, spirituality, food, and tourism.
+
+                <br><br>
+
+                Andhra Pradesh is famous for Telugu traditions,
+                historical temples, delicious spicy cuisine,
+                rivers, festivals, and warm hospitality.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="districts" id="tourism">
+
+        <h2>Popular Districts</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <a href="eastgodavari.html">
+                    <img src="https://t4.ftcdn.net/jpg/04/26/24/83/360_F_426248387_90FbilWqCbfKS4U7jzscGoyeqwXlXZBX.jpg">
+                    <h3>East Godavari</h3>
+                    <p>
+                        Famous for Konaseema beauty,
+                        coconut trees, Godavari river,
+                        and rich Telugu culture.
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="westgodavari.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaIuee-YJYYboDak9PqX2Cb0ltFQP-osEWGA&s">
+                    <h3>West Godavari</h3>
+                    <p>
+                        Known for temples, green fields,
+                        aquaculture, and peaceful villages
+                        with traditional Andhra lifestyle.
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="krishna.html">
+                    <img src="https://thumbs.dreamstime.com/b/prakasam-barrage-stretches-m-across-krishna-river-connecting-vijayawada-ntr-mangalagiri-tadepalle-municipal-258305539.jpg">
+                    <h3>Krishna</h3>
+                    <p>
+                        Home to Vijayawada,
+                        Kanaka Durga temple,
+                        Krishna river and tasty food.
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="vizag.html">
+                    <img src="vi.png">
+                    <h3>Vizag</h3>
+                    <p>
+                        Popular for beaches,
+                        hills, tourism spots,
+                        seafood and modern city life.
+                    </p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="guntur.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStHLfod-hG_dpIw0KWsR7zR4FIArvzIDkUVQ&s">
+                    <h3>Guntur</h3>
+                    <p>
+                        Famous for chilli market,
+                        Amaravati history,
+                        temples and Andhra cuisine.
+                    </p>
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-box">    
+            <h2>Tourism Office</h2>
+            <p>
+                Andhra Pradesh Tourism Department
+                <br>
+                Helpline: +91 98765 12345
+            </p>
+            <br><br>
+            <h2>Email</h2>
+            <p>
+                exploreap@gmail.com
+                <br>
+                tourism.ap@gov.in
+            </p>
+            <br><br>
+            <h2>Follow Us</h2>
+            <p>
+                Instagram: @exploreandhra
+                <br>
+                YouTube: Andhra Tourism
+            </p>
+        </div>
+        <div class="map">
+           
+<iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3815.148183787667!2d81.77800917376045!3d17.016400013389358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e76d8c735cabee3%3A0x269dffb97840d829!2sAnuragITSolutions!5e0!3m2!1sen!2sin!4v1779704082124!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Andhra Pradesh Tourism
+    </footer>
+
+</body>
+</html>

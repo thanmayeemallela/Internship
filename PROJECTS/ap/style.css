@@ -1,0 +1,101 @@
+body{
+    margin:0;
+	min height:100vh;
+    font-family: Arial;
+    background-color:#FFF8E1;
+	line-height:1.6;/*spacing btw lines to improve readability*/
+	
+b{
+	font-size: 20px;
+}
+header{
+    background-color:#FFA726;
+    color:white;
+    text-align:center;
+    padding:20px;
+	font-size: 18px;
+	box-shadow:2px 2px 10px gray;/*look like lifted box*/
+	
+}
+
+section{
+    padding:20px;
+	height:100vh;
+	width:100%;
+	background-image:url(apmap.png);
+	background-attachment:scroll;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+}
+
+h2{
+    text-align:center;
+	color:darkblue;
+}
+.district-box{/*create flexbox container*/
+	
+	/*uses flexbox container align spacing direction position*/
+    display:flex;
+	
+	/*default=row - horizontal column=vertical arrangement*/
+    flex-direction:column;
+	
+	/*place items in cemter default=left*/
+    align-items:center;
+	
+}
+
+/* Styling for district buttons/links */
+.district-box a{
+
+    /* Makes each link behave like a block element */
+    display:block;
+
+    /* Sets fixed width for buttons */
+    width:250px;
+
+    /* Background color of buttons */
+    background-color:#0066CC;
+
+    /* Text color */
+    color:white;
+
+    /* Removes underline from links */
+    text-decoration:none;
+
+    /* Adds space inside button */
+    padding:15px;
+
+    /* Adds space between buttons */
+    margin:15px 0;
+
+    /* Makes corners rounded */
+    border-radius:50px;
+
+    /* Aligns text to center */
+    text-align:center;
+
+    /* Increases text size */
+    font-size:18px;
+
+    /* Makes text bold */
+    font-weight:bold;
+
+    /* Smooth transition effect */
+    transition:0.3s;
+
+    /* Adds shadow around button */
+    box-shadow:2px 5px 10px gray;
+}
+
+.district-box a:hover{
+	/*when hovered on that links or elements*/
+	
+    background-color:#FF7043;
+	
+	/*slightly bigger when hovered*/
+	/*transition given in upper didtrict box also applies*/
+	transform:scale(1.05);
+}

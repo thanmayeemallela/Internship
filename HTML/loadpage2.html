@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rayudu Gari Military Biryani</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Poppins,sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        /* Navbar */
+
+        nav{
+            width:100%;
+            padding:10px 40px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            background:rgba(0,0,0,0.2);
+            backdrop-filter:blur(5px);
+        }
+
+        nav img{
+            width:90px;
+            height:90px;
+            object-fit:cover;
+            border-radius:50%;
+        }
+
+        nav ul{
+            display:flex;
+            gap:30px;
+            list-style:none;
+            align-items:center;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+            transition:0.5s;
+        }
+
+        nav ul li a:hover{
+            color:orange;
+        }
+
+        /* Hero Section */
+
+        .hero{
+            width:100%;
+            height:80vh;
+            background: linear-gradient(rgba(15, 15, 15, 0.6),rgba(9, 9, 9, 0.7)),url('');
+            background-size:cover;
+            background-position:center;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+
+            padding:20px;
+        }
+
+        .hero-content{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+
+        .hero-content h2{
+            font-size:65px;
+            color:orange;
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:24px;
+            margin-bottom:40px;
+        }
+
+        .btn{
+            padding:15px 35px;
+            border:none;
+            background:orange;
+            color:black;
+            font-size:18px;
+            border-radius:40px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+            transform:scale(1.05);
+        }
+
+        /* Specials Section */
+
+        .specials{
+            padding:80px 40px;
+            text-align:center;
+        }
+
+        .specials h2{
+            color:orange;
+            font-size:40px;
+            margin-bottom:50px;
+        }
+
+        .food-container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:30px;
+        }
+
+        .food-card{
+            width:300px;
+            background:#1f1f1f;
+            border-radius:20px;
+            overflow:hidden;
+            transition:0.4s;
+            box-shadow:0 0 10px rgba(255,165,0,0.3);
+        }
+
+        .food-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .food-card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .food-card h3{
+            color:orange;
+            margin:15px 0;
+        }
+
+        .food-card p{
+            padding:0 15px 20px;
+            line-height:28px;
+        }
+
+        /* Story Section */
+
+        .float-class{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            gap:50px;
+            padding:60px 50px;
+            background:#111;
+            flex-wrap:wrap;
+        }
+
+        .float-class img{
+            width:40%;
+            height:420px;
+            object-fit:cover;
+            border-radius:20px;
+        }
+
+        .float-class .block{
+            width:50%;
+        }
+
+        .float-class .block h4{
+            color:orange;
+            font-size:38px;
+            font-style:italic;
+            margin-bottom:25px;
+            line-height:50px;
+        }
+
+        .float-class .block p{
+            font-size:20px;
+            line-height:36px;
+            text-align:justify;
+        }
+
+        /* Footer */
+
+        footer{
+            background:black;
+            text-align:center;
+            padding:25px;
+            font-size:18px;
+        }
+
+        /* Responsive */
+
+        @media(max-width:768px){
+
+            .hero-content h2{
+                font-size:42px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+            .float-class{
+                flex-direction:column;
+            }
+
+            .float-class img{
+                width:100%;
+            }
+
+            .float-class .block{
+                width:100%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+
+        <img src="logo.jpg" alt="logo">
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>Rayudu Gari Military Hotel</h2>
+
+            <p>--Authentic Andhra Flavours</p>
+
+            <button class="btn">Explore Menu</button>
+
+        </div>
+
+    </section>
+
+    <!-- Specials Section -->
+
+    <section class="specials">
+
+        <h2>Chef Specials</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Chicken Biryani</h3>
+
+                <p>
+                    Traditional Andhra spicy chicken biryani
+                    with rich aroma.
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Mutton Biryani</h3>
+
+                <p>
+                    Delicious mutton dum biryani cooked
+                    with authentic spices.
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Special Meals</h3>
+
+                <p>
+                    Andhra meals served with spicy curries
+                    and traditional sides.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Story Section -->
+
+    <section class="float-class">
+
+        <img src="food.png" alt="food">
+
+        <div class="block">
+
+            <h4>
+                From one highway dhaba to Andhra's largest.
+            </h4>
+
+            <p>
+                Rayudu Gari Military Hotel started with a simple promise —
+                serve authentic Telugu food cooked the way it has always been cooked.
+                No shortcuts. No compromise. Just the real flavours of Andhra Pradesh.
+
+                <br><br>
+
+                Today, thousands of families, travellers, and food lovers stop
+                at our doors on NH-16 every single day.
+                The crowd is proof. The flavour is the reason.
+
+                <br><br>
+
+                From the Mutton Dum Biryani that people drive hours for,
+                to the Gongura Mutton that tastes like home —
+                every dish is a celebration of Telugu culinary heritage.
+
+                <br><br>
+
+                This is Vindu Bhojanam. This is Rayudu Gari.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        © 2026 Rayudu Gari Military Biryani | All Rights Reserved
+
+    </footer>
+
+</body>
+
+</html>

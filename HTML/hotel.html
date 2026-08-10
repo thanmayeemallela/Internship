@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Rayudu Gari Military Biryani</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Poppins,sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav{
+            width:100%;
+            padding:10px 40px;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            background:rgba(0,0,0,0.5);
+
+            backdrop-filter:blur(5px);
+
+            position:fixed;
+            top:0;
+            z-index:1000;
+        }
+
+        nav img{
+            width:90px;
+            height:90px;
+
+            object-fit:cover;
+
+            border-radius:50%;
+        }
+
+        nav ul{
+            display:flex;
+            gap:30px;
+
+            list-style:none;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+
+            color:white;
+
+            font-size:18px;
+
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:orange;
+        }
+
+
+.hero-content{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+    /* ================= HERO SECTION ================= */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.40),
+        rgba(0,0,0,0.50)
+    ),
+
+    url("https://images.pexels.com/photos/7394819/pexels-photo-7394819.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    position: relative;
+    overflow: hidden;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+    .hero-content{
+
+    position: relative;
+    z-index:2 ;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+        .hero-content h2{
+            font-size:70px;
+
+            color:orange;
+
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:24px;
+
+            margin-bottom:35px;
+        }
+
+        .btn{
+            padding:15px 35px;
+
+            border:none;
+
+            background:orange;
+            color:black;
+
+            font-size:18px;
+
+            border-radius:40px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+
+            transform:scale(1.05);
+        }
+
+        /* ================= SPECIALS SECTION ================= */
+
+        .specials{
+            padding:80px 40px;
+
+            text-align:center;
+        }
+
+        .specials h2{
+            color:orange;
+
+            font-size:42px;
+
+            margin-bottom:50px;
+        }
+
+        .food-container{
+            display:flex;
+            justify-content:center;
+
+            flex-wrap:wrap;
+
+            gap:30px;
+        }
+
+        .food-card{
+            width:300px;
+
+            background:#1f1f1f;
+
+            border-radius:20px;
+
+            overflow:hidden;
+
+            transition:0.4s;
+
+            box-shadow:0 0 10px rgba(255,165,0,0.3);
+        }
+
+        .food-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .food-card img{
+            width:100%;
+            height:220px;
+
+            object-fit:cover;
+        }
+
+        .food-card h3{
+            color:orange;
+
+            margin:15px 0;
+        }
+
+        .food-card p{
+            padding:0 15px 20px;
+
+            line-height:28px;
+        }
+
+        /* ================= ABOUT SECTION ================= */
+
+        .float-class{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            gap:50px;
+
+            padding:70px 50px;
+
+            flex-wrap:wrap;
+        }
+
+        .float-class img{
+            width:40%;
+            height:420px;
+
+            object-fit:cover;
+
+            border-radius:20px;
+        }
+
+        .float-class .block{
+            width:50%;
+        }
+
+        .float-class .block h4{
+            color:orange;
+
+            font-size:40px;
+
+            font-style:italic;
+
+            margin-bottom:25px;
+
+            line-height:55px;
+        }
+
+        .float-class .block p{
+            font-size:20px;
+
+            line-height:36px;
+
+            text-align:justify;
+        }
+
+        /* ================= CONTACT SECTION ================= */
+
+        .contact-section{
+            display:flex;
+
+            justify-content:space-evenly;
+            align-items:flex-start;
+
+            gap:30px;
+
+            padding:70px 50px;
+
+            background:#1a1a1a;
+
+            flex-wrap:wrap;
+        }
+
+        .contact-box{
+            width:30%;
+        }
+
+        .contact-box h2{
+            color:orange;
+
+            font-size:32px;
+
+            margin-bottom:25px;
+        }
+
+        .contact-box p{
+            font-size:18px;
+
+            line-height:34px;
+
+            color:#ddd;
+        }
+
+        .contact-box p:hover{
+            color:white;
+
+            transition:0.3s;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer{
+            background:black;
+
+            text-align:center;
+
+            padding:25px;
+
+            font-size:18px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero-content h2{
+                font-size:42px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+            .float-class{
+                flex-direction:column;
+            }
+
+            .float-class img{
+                width:100%;
+            }
+
+            .float-class .block{
+                width:100%;
+            }
+
+            .contact-box{
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <img src="data:image/jpeg;base64,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" alt="logo">
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#">Menu</a></li>
+
+            <li><a href="#">Specials</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>
+                Rayudu Gari Military Biryani
+            </h2>
+
+            <p>
+                Authentic Andhra Flavours
+            </p>
+
+            <button class="btn">
+                Explore Menu
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SPECIALS SECTION ================= -->
+
+    <section class="specials">
+
+        <h2>Chef Specials</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1701579231305-d84d8af9a3fd?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Chicken Biryani</h3>
+
+                <p>
+                    Traditional Andhra spicy chicken biryani
+                    with rich aroma.
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Mutton Biryani</h3>
+
+                <p>
+                    Delicious mutton dum biryani cooked
+                    with authentic spices.
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?q=80&w=1200&auto=format&fit=crop">
+
+                <h3>Special Meals</h3>
+
+                <p>
+                    Andhra meals served with spicy curries
+                    and traditional sides.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="float-class" id="about">
+
+        <img src="food.png" alt="food">
+
+        <div class="block">
+
+            <h4>
+                From one highway dhaba to Andhra's largest.
+            </h4>
+
+            <p>
+
+                Rayudu Gari Military Hotel started with a simple promise —
+                serve authentic Telugu food cooked the way it has always been cooked.
+                No shortcuts. No compromise. Just the real flavours of Andhra Pradesh.
+
+                <br><br>
+
+                Today, thousands of families, travellers, and food lovers stop
+                at our doors on NH-16 every single day.
+                The crowd is proof. The flavour is the reason.
+
+                <br><br>
+
+                From the Mutton Dum Biryani that people drive hours for,
+                to the Gongura Mutton that tastes like home —
+                every dish is a celebration of Telugu culinary heritage.
+
+                <br><br>
+
+                This is Vindu Bhojanam.
+                This is Rayudu Gari.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-box">
+
+            <h2>About Us</h2>
+
+            <p>
+
+                Rayudu Gari Military Biryani is one of Andhra Pradesh's
+                most loved traditional food destinations.
+
+                <br><br>
+
+                Located on NH-16, we serve authentic Telugu cuisine
+                with rich spices, traditional recipes, and unforgettable flavour.
+
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h2>Contact</h2>
+
+            <p>
+
+                Table Booking:
+                +91 98765 43210
+
+                <br><br>
+
+                Manager:
+                Mr. Rayudu
+
+                <br><br>
+
+                Email:
+                rayudugaribiryani@gmail.com
+
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h2>Social Media</h2>
+
+            <p>
+
+                Instagram:
+                @rayudugari_biryani
+
+                <br><br>
+
+                Facebook:
+                Rayudu Gari Military Hotel
+
+                <br><br>
+
+                YouTube:
+                Rayudu Gari Food Vlogs
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 Rayudu Gari Military Biryani |
+        All Rights Reserved
+
+    </footer>
+
+</body>
+
+</html>

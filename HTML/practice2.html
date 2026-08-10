@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+        .block1{
+            width:100%;
+            height:20vh;
+            background-color: bisque;
+            display:grid;
+            grid-template-columns: 20% 60% 20%;
+        }
+        .left1{
+            background-color: blueviolet;
+        }
+        .middle1{
+            background-color: blue;
+        }
+        .right1{
+            background-color: blueviolet;
+        }
+        .block2{
+            width:100%;
+            height:60vh;
+            background-color: bisque;
+            display:grid;
+            grid-template-columns: 50% 50%;
+        }
+         .left2{
+            background-color:brown;
+        }
+         .right2{
+            background-color:cadetblue;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+        }
+        .r11{
+            background-color: cadetblue;
+            display: grid;
+            grid-template-columns: 50% 50%;
+        }
+        .r111{
+            background-color: cornflowerblue;
+        }
+        .r222{
+            background-color: darkblue;
+        }
+        .r12{
+            background-color: darkmagenta;
+        }
+        .r21{
+            background-color: darkkhaki;
+        }
+        .r22{
+            background-color: darkorange;
+        }
+        .block3{
+            width:100%;
+            height:20vh;
+            background-color: bisque;
+            display:grid;
+            grid-template-columns: 40% 60%;
+        }
+         .left3{
+            background-color:chartreuse;
+            display: grid;
+            grid-template-rows: 33% 33% 34%;;
+        }
+        .l31{
+            background-color: darkgreen;
+        }
+        .l32{
+            background-color: darkgoldenrod;
+        }
+        .l33{
+            background-color: darksalmon;
+        }
+         .right3{
+            background-color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">
+            <div class="left1"></div>
+            <div class="middle1"></div>
+            <div class="right1"></div>
+        </div>
+        <div class="block2">
+            <div class="left2"></div>
+            <div class="right2">
+                <div class="r11">
+                    <div class="r111"></div>
+                    <div class="r222"></div>
+                </div>
+                <div class="r12"></div>
+                <div class="r21"></div>
+                <div class="r22"></div>
+            </div>
+        </div>
+        <div class="block3">
+            <div class="left3">
+                <div class="l31"></div>
+                <div class="l32"></div>
+                <div class="l33"></div>
+            </div>
+            <div class="right3"></div>
+        </div>
+    </div>
+</body>
+</html>

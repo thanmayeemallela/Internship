@@ -1,0 +1,145 @@
+80% of storage used … If you run out, you can't create, edit and upload files. Get 30 GB for ₹15 for 3 months ₹59.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   /* NAVBAR */
+
+.custom-navbar{
+    padding:20px 0;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(12px);
+    transition:0.4s ease;
+}
+
+/* LOGO */
+
+.logo{
+    font-size:32px;
+    font-family:'Playfair Display',serif;
+    font-weight:700;
+    color:var(--brown) !important;
+}
+
+/* NAV LINKS */
+
+.custom-link{
+    margin-left:25px;
+    color:var(--dark) !important;
+    font-weight:500;
+    position:relative;
+    transition:0.3s ease;
+}
+
+/* UNDERLINE EFFECT */
+
+.custom-link::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    background:var(--brown);
+    left:0;
+    bottom:-5px;
+    transition:0.4s ease;
+}
+
+.custom-link:hover::after{
+    width:100%;
+}
+
+/* BUTTON */
+
+.custom-btn{
+    background:var(--brown);
+    color:white !important;
+    padding:12px 28px;
+    border-radius:40px;
+    transition:0.4s ease;
+    border:none;
+}
+
+.custom-btn:hover{
+    background:#5f4440;
+    transform:translateY(-3px);
+}
+
+/* REMOVE BOOTSTRAP OUTLINE */
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* MOBILE STYLING */
+
+@media(max-width:991px){
+
+    .custom-link{
+        margin-left:0;
+        margin-top:15px;
+    }
+
+    .custom-btn{
+        margin-top:20px;
+        display:inline-block;
+    }
+
+}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   
+    <style>
+      /*  X-Small devices (portrait phones, less than 576px) */
+      body {
+        background: white;
+      }
+
+      /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+      @media (min-width: 576px) {
+        body {
+          background: red;
+        }
+      }
+
+      /* `md` applies to small devices (landscape phones, less than 768px) */
+      @media (min-width: 767px) {
+        body {
+          background: blue;
+        }
+      }
+
+      /* `lg` applies to medium devices (tablets, less than 992px) */
+      @media (min-width: 991px) {
+        body {
+          background: green;
+        }
+      }
+
+      /* `xl` applies to large devices (desktops, less than 1200px) */
+      @media (min-width: 1199px) {
+        body {
+          background:lavenderblush;
+        }
+      }
+
+      /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+      @media (min-width: 1399px) {
+        body {
+          background: purple;
+        }
+      }
+    </style>
+    <title>Bootstrap Sandbox | Breakpoints</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mb-5">Breakpoints</h1>
+
+      <!-- Don't go past here -->
+    </div>
+    <div style="margin-top: 350px"></div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

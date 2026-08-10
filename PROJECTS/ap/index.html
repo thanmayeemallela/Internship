@@ -1,0 +1,159 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Andhra Pradesh</title>
+
+   <style>
+   
+   body{
+    margin:0;
+	min height:100vh;
+    font-family: Arial;
+    background-color:#FFF8E1;
+	line-height:1.6;/*spacing btw lines to improve readability*/
+	
+b{
+	font-size: 20px;
+}
+header{
+    background-color:#FFA726;
+    color:white;
+    text-align:center;
+    padding:20px;
+	font-size: 18px;
+	box-shadow:2px 2px 10px gray;/*look like lifted box*/
+	
+}
+
+section{
+    padding:20px;
+	height:100vh;
+	width:100%;
+	background-image:url(apmap.png);
+	background-attachment:scroll;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+}
+
+h2{
+    text-align:center;
+	color:darkblue;
+}
+.district-box{/*create flexbox container*/
+	
+	/*uses flexbox container align spacing direction position*/
+    display:flex;
+	
+	/*default=row - horizontal column=vertical arrangement*/
+    flex-direction:column;
+	
+	/*place items in cemter default=left*/
+    align-items:center;
+	
+}
+
+/* Styling for district buttons/links */
+.district-box a{
+
+    /* Makes each link behave like a block element */
+    display:block;
+
+    /* Sets fixed width for buttons */
+    width:250px;
+
+    /* Background color of buttons */
+    background-color:#0066CC;
+
+    /* Text color */
+    color:white;
+
+    /* Removes underline from links */
+    text-decoration:none;
+
+    /* Adds space inside button */
+    padding:15px;
+
+    /* Adds space between buttons */
+    margin:15px 0;
+
+    /* Makes corners rounded */
+    border-radius:50px;
+
+    /* Aligns text to center */
+    text-align:center;
+
+    /* Increases text size */
+    font-size:18px;
+
+    /* Makes text bold */
+    font-weight:bold;
+
+    /* Smooth transition effect */
+    transition:0.3s;
+
+    /* Adds shadow around button */
+    box-shadow:2px 5px 10px gray;
+}
+
+.district-box a:hover{
+	/*when hovered on that links or elements*/
+	
+    background-color:#FF7043;
+	
+	/*slightly bigger when hovered*/
+	/*transition given in upper didtrict box also applies*/
+	transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+       <header>
+
+        <h1>Andhra Pradesh</h1>
+
+        <p>
+            Andhra Pradesh is a dynamic state on India's southeastern coast. <br>
+			Famed as the <b>"Rice Bowl of India,"</b> it features a massive 974 km coastline along the Bay of Bengal.<br>
+			The capital is <b><i>Amaravati</i></b>, and<b><i>Visakhapatnam</i></b> serves as the largest city and primary economic hub.Widely known as a top producer of rice, cotton, tobacco, and chillies.<br>
+			It is also one of India's leading states in horticulture and fruit production.<br>
+			Dominates India's marine exports, contributing more than 70% of the nation's total output.<br>
+			Cities like Visakhapatnam, Vijayawada, and Tirupati are growing rapidly as IT and industrial centers, specializing in pharmaceuticals and textiles.<br>
+			 Home to major commercial ports like <b>Visakhapatnam Port,</b> Krishnapatnam, and Gangavaram.<br>
+			<b>Telugu</b> is the classical and official language of the state.<br>
+			It is the birthplace of the classical dance form <b><i>Kuchipudi</i></b> and ancient, globally celebrated textile arts like <b><i>Kalamkari</i></b><br>
+			 Renowned for its bold flavors, aromatic <i>spices</i>, and fiery curries, with staple rice-based delicacies.<br>
+			The state boasts pristine hill stations like the <b><i>Araku Valley</i></b> and scenic bio-diverse ecosystems like the <b>Coringa Wildlife Sanctuary.</b><br>
+        </p>
+
+       </header>
+
+    <section>
+
+        <h2>Major Districts</h2>
+
+        <div class="district-box">
+
+            <a href="eastgodavari.html">East Godavari</a>
+
+            <a href="westgodavari.html">West Godavari</a>
+
+            <a href="krishna.html">Krishna</a>
+
+            <a href="vizag.html">Visakhapatnam</a>
+
+            <a href="guntur.html">Guntur</a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Rayudu Gari Military Biryani</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Poppins,sans-serif;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        body{
+            background:#FFF8E7;
+            color:white;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav{
+            width:100%;
+            padding:10px 40px;
+
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+
+            background:#B7E4C7;
+
+            backdrop-filter:blur(5px);
+
+            position:fixed;
+            top:0;
+            z-index:1000;
+        }
+
+        nav img{
+            width:90px;
+            height:90px;
+
+            object-fit:cover;
+
+            border-radius:50%;
+        }
+
+        nav ul{
+            display:flex;
+            gap:30px;
+
+            list-style:none;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+
+            color:white;
+
+            font-size:18px;
+
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:orange;
+        }
+
+        /* ================= HERO SECTION ================= */
+       /* .hero{
+    width:100%;
+    height:100vh;
+
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+}
+
+/* Background Image Layer */
+
+/*.hero::before{
+
+    content:"";
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ),
+
+    url('https://images.unsplash.com/photo-1563379091339-03246963d29c?q=80&w=1200&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    filter:blur(4px);
+
+    transform:scale(1.1);
+
+    z-index:1;
+}
+
+/* Text Layer */
+
+/*.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}*/
+
+    /* ================= HERO SECTION ================= */
+
+/*.hero{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+
+    url("https://images.unsplash.com/photo-1563379091339-03246963d29c");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}*/
+
+.hero-content{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+    /* ================= HERO SECTION ================= */
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.4)
+    ),
+
+    url("https://www.tataneu.com/pages/travel/_next/image?url=https%3A%2F%2Fd1msew97rp2nin.cloudfront.net%2Fprodin%2Ftntravel%2Fblogimages%2Fccbf711d-6427-4ec7-a4d6-f55ae7e17392.webp&w=3840&q=75");
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow: hidden;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+}
+
+    .hero-content{
+
+    position: relative;
+    z-index:2 ;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+        .hero-content h2{
+            font-size:70px;
+
+            color:orange;
+
+            margin-bottom:20px;
+        }
+
+        .hero-content p{
+            font-size:24px;
+            margin-left: 500PX;
+
+            margin-bottom:35px;
+        }
+
+        .btn{
+            padding:15px 35px;
+
+            border:none;
+
+            background:orange;
+            color:black;
+
+            font-size:18px;
+
+            border-radius:40px;
+
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:white;
+
+            transform:scale(1.05);
+        }
+
+        /* ================= SPECIALS SECTION ================= */
+
+        .specials{
+            padding:80px 40px;
+
+            text-align:center;
+        }
+
+        .specials h2{
+            color:orange;
+
+            font-size:42px;
+
+            margin-bottom:5 0px;
+        }
+
+        .food-container{
+            display:flex;
+            justify-content:center;
+
+            flex-wrap:wrap;
+
+            gap:30px;
+        }
+
+        .food-card{
+            width:300px;
+
+            background:#DDEAF7;
+
+            border-radius:20px;
+
+            overflow:hidden;
+
+            transition:0.4s;
+
+            box-shadow:0 0 10px rgba(255,165,0,0.3);
+        }
+
+        .food-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .food-card img{
+            width:100%;
+            height:300px;
+
+            object-fit:cover;
+        }
+
+        .food-card h3{
+            color:orange;
+
+            margin:15px 0;
+        }
+
+        .food-card p{
+            padding:0 15px 20px;
+
+            line-height:28px;
+        }
+
+        /* ================= ABOUT SECTION ================= */
+
+        .float-class{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            gap:50px;
+
+            padding:70px 50px;
+
+            flex-wrap:wrap;
+        }
+
+        .float-class img{
+            width:40%;
+            height:600px;
+
+            object-fit:cover;
+
+            border-radius:20px;
+        }
+
+        .float-class .block{
+            width:50%;
+        }
+
+        .float-class .block h4{
+            color:orange;
+
+            font-size:40px;
+
+            font-style:italic;
+
+            margin-bottom:25px;
+
+            line-height:55px;
+        }
+
+        .float-class .block p{
+            font-size:20px;
+
+            line-height:36px;
+
+            text-align:center;
+        }
+
+        /* ================= CONTACT SECTION ================= */
+
+        .contact-section{
+            display:flex;
+
+            justify-content:space-evenly;
+            align-items:flex-start;
+
+            gap:30px;
+
+            padding:70px 50px;
+
+            background:lavender;
+
+            flex-wrap:wrap;
+        }
+
+        .contact-box{
+            width:30%;
+        }
+
+        .contact-box h2{
+            color:orange;
+
+            font-size:32px;
+
+            margin-bottom:25px;
+        }
+
+        .contact-box p{
+            font-size:18px;
+
+            line-height:34px;
+
+            color:#ddd;
+        }
+
+        .contact-box p:hover{
+            color:orange;
+
+            transition:0.3s;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer{
+            background:#84A98C;
+
+            text-align:center;
+
+            padding:25px;
+
+            font-size:18px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:768px){
+
+            nav{
+                flex-direction:column;
+                gap:20px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero-content h2{
+                font-size:42px;
+            }
+
+            .hero-content p{
+                font-size:18px;
+            }
+
+            .float-class{
+                flex-direction:column;
+            }
+
+            .float-class img{
+                width:100%;
+            }
+
+            .float-class .block{
+                width:100%;
+            }
+
+            .contact-box{
+                width:100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYFQ3gs4yszibLxSuCT_Qocrl1bD5xFabCw&s" alt="logo">
+
+        <ul>
+
+            <li><a href="#">Home</a></li>
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#">Tourism</a></li>
+
+            <li><a href="#contact">Media</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h2>
+                West Godavari
+            </h2>
+
+            <p>
+                ~"land of greenery.” 🌿🌾
+            </p>
+
+            <button class="btn">
+                Explore Menu
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SPECIALS SECTION ================= -->
+
+    <section class="specials">
+
+        <h2>TOURISM</h2>
+
+        <div class="food-container">
+
+            <div class="food-card">
+
+                <img src="https://www.mystore.in/s/62ea2c599d1398fa16dbae0a/g/1f259404dcdb48c7ad607c2ed5845de8/generated-image-640x640.jpeg">
+                <h3>Temples</h3>
+
+                <p>
+                    “A temple is a place of peace, devotion, and divine beauty.” 🛕
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5RMnpC68V-FwsRPaiDCuuEK9kD4V7b5J1Iw&s">
+
+                <h3>Food</h3>
+
+                <p>
+                    “a traditional taste filled with village flavor and love.” 🍛
+                </p>
+
+            </div>
+
+            <div class="food-card">
+
+                <img src="kuch.png">
+                <h3>Culture</h3>
+
+                <p>
+                    “Kuchipudi reflects the beauty of Telugu tradition.” 💫
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="float-class" id="about">
+
+        <img src="https://scontent.frja2-1.fna.fbcdn.net/v/t39.30808-6/497755316_3630629737238791_6564570326848733524_n.jpg?stp=dst-jpg_p526x296_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=sl721WI9BO0Q7kNvwHU5L2a&_nc_oc=AdpDFDxfrfcaRgKFbreRf5iFu9cLuZsm0-GfsX-bc-SuFVd6OSZCCc9tTk5fdfoQMm-vHiBi0sGF7I6_aWi5mMN0&_nc_zt=23&_nc_ht=scontent.frja2-1.fna&_nc_gid=jBz22VN0OhWXmCDJvCjKgQ&_nc_ss=7b289&oh=00_Af7A04ns7vMF1bKjyYdm7UQ_x38UBslv6askp_US9w2Nnw&oe=6A19B0B3">
+        <div class="block">
+
+            <h4>
+                 — “Where Nature, Culture, and Tradition Flow Together”
+            </h4>
+
+            <p>
+
+
+West Godavari is one of the most beautiful and fertile districts in Andhra Pradesh. Known for its green paddy fields, coconut farms, and peaceful villages, the district is often called the “Rice Bowl of Andhra Pradesh.” <br><br>
+
+Festivals are celebrated with great joy, and the people are known for their hospitality and strong connection to their roots. Classical arts, traditional food, and village lifestyles reflect the unique heritage of West Godavari and make it culturally vibrant.<br><br>
+
+West Godavari is home to several famous temples and scenic places that attract visitors from different parts of the state. Places like Dwaraka Tirumala are well known for their spiritual importance. 
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-box">
+
+            <h2>About Us</h2>
+
+            <p>
+
+                
+
+Welcome to West Godavari District — a beautiful land filled with greenery, culture, traditions, and peaceful village life. <br><br>Our district is well known for its scenic landscapes, famous temples, delicious traditional foods, and rich heritage. <br><br>
+</p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h2>Contact</h2>
+
+            <p>
+
+               Tourism Help Desk: +91 98765 43210<br><br>
+
+              District Information Office: West Godavari, Andhra Pradesh
+              <br><br>
+              Email: westgodavaritourism@gmail.com
+              <br><br>
+              Support Timing: 9:00 AM – 6:00 PM
+
+            </p>
+
+        </div>
+
+        <div class="contact-box">
+
+            <h2>Social Media</h2>
+
+            <p>
+
+                Instagram: @visit_westgodavari
+                <br><br>
+                Facebook: West Godavari Tourism
+                <br><br>
+                YouTube: Explore West Godavari
+                <br><br>
+                 Twitter: @WG_Tourism
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        © 2026 westgodavari tourism|
+        All Rights Reserved
+
+    </footer>
+
+</body>
+
+</html>

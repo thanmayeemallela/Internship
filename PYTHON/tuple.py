@@ -1,0 +1,13 @@
+t1=100,2,3,4   
+t2=(100,200,300)
+a,b,c,d=t1   
+print(type(t1))
+print(a)
+print(b)
+print(c)
+print(d)
+print(t2[1])
+print(t2[0:])
+print(t2*2)
+t3=t1+t2
+print(t3)

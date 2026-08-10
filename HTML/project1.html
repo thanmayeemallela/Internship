@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100%;
+            height:10vh;
+            background-color: aqua;
+        }
+        .block{
+            width: 100%;
+            height: 10vh;
+            background-color: bisque;
+            
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+        li{
+            display: inline;
+             
+        }
+       nav{
+            float: right;
+             padding: 10px;
+             font-family: sans-serif;
+            
+        }
+        .block1{
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(rgba(150, 7, 7, 0.6),rgba(0, 0, 0, 0.6)),url(img4.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            border-radius: 5px;
+            box-shadow:2px 2px 20px gray;
+        }
+        .block1 h5{
+            text-align: center;
+            color: aliceblue;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 100px;
+            margin: 10px;
+        }
+        .block1 button{
+            align-items: center;
+            background-color: aliceblue;
+            color: black;
+            margin-left: 530px;
+            margin-top: px;
+            padding:15px;
+            border-radius: 50px;
+        }
+        .block2{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .box1{
+            width: 30%;
+            height: 80vh;
+            background-color:bisque;
+            border-radius: 10%;
+            box-shadow:2px 2px 20px gray;
+        }
+        .card_img1{
+            width: 80%;
+            height: 30vh;
+            border-radius: 10%;
+            margin-top:20px;
+            margin-left: 33px;
+            background-image: url(img.png);
+            background-repeat: no-repeat;
+            background-position: center;
+             box-shadow:2px 2px 20px gray;
+        }
+        .block2 .box1 h1{
+            text-align: center;
+            font-weight: bold;
+            color:crimson;
+            margin: 10px;
+
+        }
+        .block2 .box1 p{
+            padding: 15px;
+            margin: 5px;
+        }
+        .box2{
+            width: 30%;
+            height: 80vh;
+            background-color:#aef6b4;
+             border-radius: 10%;
+             box-shadow:2px 2px 20px gray;
+
+        }
+        .card_img2{
+            width: 80%;
+            height: 30vh;
+            margin-top:20px;
+            margin-left: 33px;
+            background-image: url(img1.png);
+             border-radius: 10%;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow:2px 2px 20px gray;
+
+        }
+        .block2 .box2 h1{
+            text-align: center;
+            font-weight: bold;
+            color:crimson;
+            margin: 10px;
+
+        }
+        .block2 .box2 p{
+            padding: 15px;
+            margin: 5px;
+        }
+        .box3{
+            width: 30%;
+            height: 80vh;
+            background-color:rgb(246, 187, 223);
+             border-radius: 10%;
+             box-shadow:2px 2px 20px gray;
+        }
+        .card_img3{
+            width: 80%;
+            height: 30vh;
+            margin-top:20px;
+            margin-left: 33px;
+            background-image: url(img2.png);
+             border-radius: 10%;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow:2px 2px 20px gray;
+
+        }
+        .block2 .box3 h1{
+            text-align: center;
+            font-weight: bold;
+            color:crimson;
+            margin: 10px;
+
+        }
+        .block2 .box3 p{
+            padding: 15px;
+            margin: 5px;
+        }
+        .block2 .box1 button{
+            background-color: rgb(237, 242, 219);
+            color: black;
+            margin-left: 130px;
+            padding:5px;
+            border-radius: 10px;
+            
+        }
+        .block2 .box1:hover{
+            transform: scale(1.04);
+        }
+        .block2 .box1 button:hover{
+            transform: scale(1.06);
+        }
+        .block2 .box2 button{
+            background-color: rgb(187, 231, 214);
+            color: black;
+            margin-left: 130px;
+            padding:5px;
+            border-radius: 10px;
+        }
+        .block2 .box2:hover{
+            transform: scale(1.04);
+        }
+        .block2 .box2 button:hover{
+            transform: scale(1.06);
+        }
+        .block2 .box3 button{
+            background-color: rgb(248, 212, 246);
+            color: black;
+            margin-left: 130px;
+            margin-top: 18px;
+            padding:5px;
+            border-radius: 10px;
+        }
+        .block2 .box3:hover{
+            transform: scale(1.04);
+        }
+        .block2 .box3 button:hover{
+            transform: scale(1.06);
+        }
+        a{
+            font-size: 13px;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+        <nav>
+        <li><a href="">Home</a></li>  
+        <li><a href="">About</a></li>  
+        <li><a href="">Us</a></li>
+        
+        </nav>
+        </div>
+    </div>
+    <div class="block1">
+          <h5>Lorem ipsum dolor sit.</h5>
+          <button>more....!</button>
+    </div>
+    <div class="block2">
+        <div class="box1">
+            <div class="card_img1">
+            </div>
+            <h1>Nature</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eveniet dolor reiciendis amet molestiae totam exercitationem est possimus facere animi mollitia natus, quod accusamus in quam et sit corrupti voluptatum?</p>
+            <button><a href="nature.html">Nature</a></button>
+        </div>
+        <div class="box2">
+            <div class="card_img2">
+            </div>
+            <h1>Galaxy</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, architecto esse delectus voluptates soluta voluptate sunt praesentium harum, quae, iusto eaque asperiores earum cupiditate maiores aut itaque! Commodi, eius nemo.</p>
+            <button>Galaxy</button>
+        </div>
+        
+        <div class="box3">
+            <div class="card_img3">
+            </div>
+            <h1>Flowers</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic beatae labore excepturi minima minus exercitationem. Sit rem sint saepe quae a unde dolores tempora, magnam tempore maiores, ratione deserunt distinctio.</p>
+            <button>Flowers</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Velvet Vogue Luxury Expo</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#f5e6cc;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+}
+
+.blob1{
+position:absolute;
+width:350px;
+height:350px;
+background:#d4a373;
+border-radius:50%;
+filter:blur(150px);
+opacity:.15;
+top:200px;
+left:-100px;
+z-index:-1;
+}
+
+.blob2{
+position:absolute;
+width:300px;
+height:300px;
+background:#8b6f47;
+border-radius:50%;
+filter:blur(140px);
+opacity:.15;
+bottom:0;
+right:-100px;
+z-index:-1;
+}
+
+.navbar{
+background:rgba(0,0,0,.5);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #d4a373;
+padding:18px 0;
+}
+
+.navbar-brand{
+color:#d4a373 !important;
+font-size:32px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.nav-link{
+color:#f5e6cc !important;
+margin-left:20px;
+transition:.4s;
+}
+
+.nav-link:hover{
+color:#d4a373 !important;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+padding-top:120px;
+}
+
+.hero h1{
+font-size:85px;
+line-height:1;
+font-weight:bold;
+}
+
+.gold-text{
+background:linear-gradient(to right,#d4a373,#f5deb3);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.hero p{
+line-height:1.9;
+color:#d8c7aa;
+max-width:500px;
+}
+
+.btn-luxury{
+background:transparent;
+border:1px solid #d4a373;
+color:#d4a373;
+padding:14px 35px;
+border-radius:40px;
+transition:.5s;
+}
+
+.btn-luxury:hover{
+background:#d4a373;
+color:black;
+box-shadow:0 0 25px rgba(212,163,115,.5);
+}
+
+.hero-images{
+position:relative;
+height:600px;
+}
+
+.img1{
+position:absolute;
+width:320px;
+height:450px;
+object-fit:cover;
+border-radius:30px;
+right:50px;
+top:0;
+border:2px solid #d4a373;
+box-shadow:0 0 30px rgba(212,163,115,.3);
+}
+
+.img2{
+position:absolute;
+width:230px;
+height:280px;
+object-fit:cover;
+border-radius:25px;
+left:0;
+bottom:60px;
+border:2px solid #d4a373;
+}
+
+.floating-box{
+position:absolute;
+bottom:20px;
+right:20px;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid #d4a373;
+border-radius:25px;
+}
+
+.vip-strip{
+margin-top:50px;
+background:linear-gradient(to right,#8b6f47,#d4a373,#8b6f47);
+padding:18px;
+text-align:center;
+color:black;
+font-weight:bold;
+font-size:20px;
+}
+
+.categories{
+margin-top:80px;
+}
+
+.pill{
+padding:14px 28px;
+border:1px solid #d4a373;
+border-radius:40px;
+transition:.5s;
+cursor:pointer;
+}
+
+.pill:hover{
+background:#d4a373;
+color:black;
+transform:translateY(-8px);
+}
+
+.title{
+margin-top:120px;
+margin-bottom:60px;
+font-size:55px;
+font-weight:bold;
+}
+
+.bento-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.box{
+position:relative;
+overflow:hidden;
+border-radius:30px;
+border:1px solid #d4a373;
+transition:.5s;
+min-height:240px;
+}
+
+.box:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(212,163,115,.3);
+}
+
+.box img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+.large{
+grid-column:span 2;
+grid-row:span 2;
+min-height:500px;
+}
+
+.wide{
+grid-column:span 2;
+}
+
+.overlay{
+position:absolute;
+bottom:20px;
+left:20px;
+background:rgba(0,0,0,.4);
+backdrop-filter:blur(10px);
+padding:15px;
+border-radius:20px;
+}
+/* Offers */
+
+.offer-card{
+background:rgba(255,255,255,.04);
+border:1px solid #d4a373;
+padding:35px;
+border-radius:30px;
+transition:.5s;
+height:100%;
+}
+
+.offer-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(212,163,115,.3);
+}
+
+.offer-card i{
+font-size:45px;
+color:#d4a373;
+margin-bottom:20px;
+}
+
+/* Gift */
+
+.gift-box{
+border:1px solid #d4a373;
+border-radius:50%;
+width:220px;
+height:220px;
+margin:auto;
+transition:.5s;
+background:rgba(255,255,255,.03);
+}
+
+.gift-box:hover{
+transform:scale(1.08);
+box-shadow:0 0 30px rgba(212,163,115,.3);
+}
+
+.gift-box i{
+font-size:45px;
+color:#d4a373;
+margin-bottom:15px;
+}
+
+/* Curve */
+
+.curve{
+margin-top:70px;
+background:#111;
+border-top:1px solid #d4a373;
+border-radius:100px 100px 0 0;
+padding:10px 2px;
+}
+
+.glass{
+background:rgba(255,255,255,.04);
+border:1px solid #d4a373;
+padding:35px;
+border-radius:30px;
+transition:.5s;
+height:100%;
+}
+
+.glass:hover{
+transform:translateY(-10px);
+}
+
+.glass i{
+font-size:40px;
+color:#d4a373;
+margin-bottom:20px;
+}
+
+.membership{
+margin-top:120px;
+border:1px solid #d4a373;
+border-radius:40px;
+padding:70px 30px;
+background:rgba(255,255,255,.03);
+}
+
+.runway{
+margin-top:100px;
+overflow:hidden;
+white-space:nowrap;
+}
+
+.track{
+display:inline-block;
+animation:scroll 18s linear infinite;
+}
+
+.track img{
+width:280px;
+height:380px;
+object-fit:cover;
+border-radius:30px;
+border:1px solid #d4a373;
+margin:15px;
+}
+
+@keyframes scroll{
+from{
+transform:translateX(0);
+}
+to{
+transform:translateX(-100%);
+}
+}
+
+.review{
+border:1px solid #d4a373;
+border-radius:30px;
+padding:35px;
+background:rgba(255,255,255,.03);
+transition:.5s;
+height:100%;
+}
+
+.review:hover{
+transform:translateY(-10px);
+}
+
+footer{
+margin-top:120px;
+padding:70px 20px;
+border-top:1px solid #d4a373;
+background:#050505;
+}
+
+footer h2{
+font-size:50px;
+color:#d4a373;
+font-weight:bold;
+}
+
+.social i{
+font-size:24px;
+transition:.5s;
+cursor:pointer;
+}
+
+.social i:hover{
+color:#d4a373;
+transform:scale(1.2);
+}
+
+@media(max-width:992px){
+
+.hero{
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero-images{
+margin-top:60px;
+}
+
+.bento-grid{
+grid-template-columns:1fr 1fr;
+}
+
+.large{
+grid-column:span 2;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:42px;
+}
+
+.title{
+font-size:38px;
+}
+
+.bento-grid{
+grid-template-columns:1fr;
+}
+
+.large,
+.wide{
+grid-column:span 1;
+}
+
+.hero-images{
+height:500px;
+}
+
+.img1{
+width:220px;
+height:320px;
+}
+
+.img2{
+width:180px;
+height:220px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="blob1"></div>
+<div class="blob2"></div>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+
+<a class="navbar-brand" href="#">
+Velvet Vogue
+</a>
+
+<button class="navbar-toggler bg-light"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+<a class="nav-link" href="#">Beauty</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Fashion</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Shopping</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Expo</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</nav>
+
+<section class="hero d-flex align-items-center">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1>
+Luxury
+<span class="gold-text">Beauty &</span>
+Fashion Expo
+</h1>
+
+<p class="mt-4">
+Discover premium cosmetics,
+skin care essentials,
+runway fashion collections,
+luxury shopping experiences
+and exclusive beauty offers.
+</p>
+
+<button class="btn-luxury mt-4">
+Explore Collection
+</button>
+
+</div>
+
+<div class="col-lg-6 hero-images">
+
+<img class="img1"
+src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1000">
+
+<img class="img2"
+src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=900">
+
+<div class="floating-box p-3">
+
+<h5>2026 Fashion Week</h5>
+<p>Luxury • Elegance • Style</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="vip-strip">
+✨ Free Makeup Kit On Shopping Above ₹2999 ✨
+</div>
+
+<div class="container">
+
+<div class="categories d-flex justify-content-center flex-wrap gap-3">
+
+<div class="pill">Skin Care</div>
+<div class="pill">Luxury Fashion</div>
+<div class="pill">Cosmetics</div>
+<div class="pill">Perfumes</div>
+<div class="pill">Makeup</div>
+<div class="pill">Accessories</div>
+
+</div>
+
+</div>
+
+<!-- From here onward keep the same sections from your original code and only replace: -->
+
+<!-- h1 class="title" -->
+<!-- with -->
+<!-- h1 class="title text-center" -->
+
+<!-- offer-card -->
+<!-- with -->
+<!-- offer-card text-center -->
+
+<!-- gift-box -->
+<!-- with -->
+<!-- gift-box d-flex flex-column justify-content-center align-items-center -->
+
+<!-- membership -->
+<!-- with -->
+<!-- membership text-center -->
+
+<!-- footer -->
+<!-- with -->
+<!-- footer class="text-center" -->
+
+<!-- social icons -->
+<!-- add mx-2 -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
