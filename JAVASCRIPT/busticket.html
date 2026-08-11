@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bus Ticket</title>
+</head>
+<body>
+
+<h2>Bus Ticket Booking</h2>
+
+<label>Age:</label>
+<input type="number" id="age"><br><br>
+
+<button onclick="ticket()">
+Check Ticket
+</button>
+
+<script>
+
+function ticket(){
+
+let age = Number(document.getElementById("age").value);
+
+if(age < 5){
+    console.log("Free Ticket");
+}
+else if(age <= 12){
+    console.log("Ticket Price = ₹100");
+}
+else if(age <= 60){
+    console.log("Ticket Price = ₹250");
+}
+else{
+    console.log("Senior Citizen Ticket = ₹150");
+}
+
+}
+
+</script>
+
+</body>
+</html>

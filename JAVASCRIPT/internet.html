@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Internet Speed</title>
+</head>
+<body>
+
+<h2>Internet Speed Checker</h2>
+
+<label>Speed (Mbps):</label>
+<input type="number" id="speed">
+
+<br><br>
+
+<button onclick="check()">Check</button>
+
+<script>
+
+function check(){
+
+let speed = Number(document.getElementById("speed").value);
+
+if(speed >= 100){
+console.log("Excellent Speed");
+}
+else if(speed >=50){
+console.log("Good Speed");
+}
+else if(speed >=20){
+console.log("Average Speed");
+}
+else{
+console.log("Poor Speed");
+}
+
+}
+
+</script>
+
+</body>
+</html>

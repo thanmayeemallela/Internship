@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scholarship</title>
+</head>
+<body>
+
+<h2>Scholarship Eligibility</h2>
+
+<label>Percentage:</label>
+<input type="number" id="marks"><br><br>
+
+<button onclick="checkScholarship()">Check</button>
+
+<script>
+
+function checkScholarship(){
+
+let marks = Number(document.getElementById("marks").value);
+
+if(marks >= 90){
+    console.log("100% Scholarship");
+}
+else if(marks >= 75){
+    console.log("50% Scholarship");
+}
+else{
+    console.log("No Scholarship");
+}
+
+}
+
+</script>
+
+</body>
+</html>

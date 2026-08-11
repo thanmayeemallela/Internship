@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Withdrawal</title>
+</head>
+<body>
+
+<h2>ATM Withdrawal</h2>
+
+<script>
+
+let balance = Number(prompt("Enter Account Balance:"));
+let amount = Number(prompt("Enter Withdrawal Amount:"));
+
+if (balance >= amount) {
+
+    if (amount > 0) {
+        balance = balance - amount;
+        console.log("Withdrawal Successful");
+        console.log("Remaining Balance = " + balance);
+    }
+    else {
+        console.log("Invalid Withdrawal Amount");
+    }
+
+}
+else {
+    console.log("Insufficient Balance");
+}
+
+</script>
+
+</body>
+</html>

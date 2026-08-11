@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel Booking</title>
+</head>
+<body>
+
+<h2>Hotel Room Booking</h2>
+
+<label>Number of Days:</label>
+<input type="number" id="days"><br><br>
+
+<button onclick="bill()">Calculate</button>
+
+<script>
+
+function bill(){
+
+let days = Number(document.getElementById("days").value);
+
+let total = days * 1500;
+
+console.log("Room Charge = ₹" + total);
+
+}
+
+</script>
+
+</body>
+</html>

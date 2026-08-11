@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Validation</title>
+</head>
+<body>
+
+<h2>Login Validation</h2>
+
+<script>
+
+let username = prompt("Enter Username:");
+let password = prompt("Enter Password:");
+
+if (username === "admin") {
+
+    if (password === "admin123") {
+        console.log("Login Successful");
+    }
+    else {
+        console.log("Invalid Password");
+    }
+
+}
+else {
+    console.log("Invalid Username");
+}
+
+</script>
+
+</body>
+</html>

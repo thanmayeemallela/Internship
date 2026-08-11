@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Eligibility</title>
+</head>
+<body>
+
+<h2>Loan Eligibility Checker</h2>
+
+<label>Age:</label>
+<input type="number" id="age"><br><br>
+
+<label>Monthly Salary:</label>
+<input type="number" id="salary"><br><br>
+
+<button onclick="checkLoan()">Check</button>
+
+<script>
+
+function checkLoan(){
+
+let age = Number(document.getElementById("age").value);
+let salary = Number(document.getElementById("salary").value);
+
+if(age >= 21 && salary >= 25000){
+    console.log("Eligible for Loan");
+}
+else{
+    console.log("Not Eligible for Loan");
+}
+
+}
+
+</script>
+
+</body>
+</html>

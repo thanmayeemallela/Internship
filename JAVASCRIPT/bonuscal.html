@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Bonus</title>
+</head>
+<body>
+
+<h2>Employee Bonus Calculator</h2>
+
+<label>Salary:</label>
+<input type="number" id="salary">
+
+<br><br>
+
+<label>Years of Service:</label>
+<input type="number" id="years">
+
+<br><br>
+
+<button onclick="bonus()">Calculate</button>
+
+<script>
+
+function bonus(){
+
+let salary = Number(document.getElementById("salary").value);
+let years = Number(document.getElementById("years").value);
+
+let bonus = 0;
+
+if(years >= 10){
+bonus = salary * 0.20;
+}
+else if(years >=5){
+bonus = salary * 0.10;
+}
+else{
+bonus = salary * 0.05;
+}
+
+console.log("Bonus = " + bonus);
+console.log("Total Salary = " + (salary+bonus));
+
+}
+
+</script>
+
+</body>
+</html>

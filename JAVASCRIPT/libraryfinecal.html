@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Library Fine</title>
+</head>
+<body>
+
+<h2>Library Fine Calculator</h2>
+
+<label>Late Days:</label>
+<input type="number" id="days"><br><br>
+
+<button onclick="fine()">Calculate</button>
+
+<script>
+
+function fine(){
+
+let days = Number(document.getElementById("days").value);
+
+let amount;
+
+if(days <= 5){
+    amount = days * 2;
+}
+else{
+    amount = days * 5;
+}
+
+console.log("Fine Amount = ₹" + amount);
+
+}
+
+</script>
+
+</body>
+</html>
